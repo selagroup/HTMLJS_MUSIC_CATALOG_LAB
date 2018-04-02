@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "json-server": "^0.12.1",
+    "normalize.css": "3.0.3"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "h5bp-configs": {
+    "directories": {
+      "archive": "archive",
+      "dist": "dist",
+      "src": "src",
+      "test": "test"
+    }
+  },
+  "homepage": "https://html5boilerplate.com/",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt"
+  },
+  "name": "html5-boilerplate",
+  "private": true,
+  "scripts": {
+    "start": "http-server ./starter/",
+    "server": "json-server --watch ./common/data/db.json",
+    "step1": "http-server ./step1/",
+    "step2": "http-server ./step2/",
+    "step3": "http-server ./step3/",
+    "step4": "http-server ./step4/",
+    "step5": "http-server ./step5/",
+    "step6": "http-server ./step6/",
+    "step7": "http-server ./step7/",
+    "step8": "http-server ./step8/"
+  },
+  "version": "5.3.0"
+}

@@ -1,0 +1,13 @@
+input {
+    padding: 3px;
+    margin: 5px;
+}
+
+input.invalid{
+    outline: solid 2px lightpink;
+}
+
+div.error{
+    padding: 3px;
+    color: red;
+}
