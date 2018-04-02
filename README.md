@@ -79,7 +79,7 @@ In this step will create a new script file that holds a music artist array that 
 - You can test your functions by browsing to the home page and invoking inside the chrome console. you can find more details on how to use the console [here](https://developers.google.com/web/tools/chrome-devtools/console/).
 
 
-### Step 3
+### Step 3 - DOM & Events
 In this step you will add hover and click functionality to the artist list.
 -   create a new ``home.js`` file under the js folder, and include it in the home page.
 -  inside the ``home.js`` file implement the following:
