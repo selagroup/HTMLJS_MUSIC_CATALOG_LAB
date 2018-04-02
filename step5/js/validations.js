@@ -9,9 +9,9 @@ function validateForm(form){
         return url.length === 0 || URL_REGEXP.test(url);
     }
 
-    function validateUrlInput(input){
+    function validateUrlInput(input, validationsCount){
 
-            if(input.classList.contains(CLASS_INVALID))
+            if(validationsCount >1  && input.classList.contains(CLASS_INVALID))
                 return false;
 
             let valid = validateUrl(input.value);
@@ -81,16 +81,20 @@ function validateForm(form){
     for(let i=0; i<inputs.length; i++){
 
         let input = inputs[i];
+        let validationCount =0;
         if(input.hasAttribute('required')){
+            validationCount++;
             input.addEventListener('change',(event)=>{
                 validateRequiredInput(event.target);
             });
         }
         if(input.type && input.type === 'url'){
+            validationCount++;
             input.addEventListener('change',(event)=>{
-                validateUrlInput(event.target);
+                validateUrlInput(event.target,validationCount);
             });
         }
+        
 
     }
 
