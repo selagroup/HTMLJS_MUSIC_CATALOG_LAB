@@ -177,7 +177,7 @@ document.location.search //?id=23
 - After you have id, use the ``getArtistById`` function to get the artist and pre populate the form with artist fetched from the api.
 - The ``getArtistById`` should be refactored to fetch the artists from the api.
 
-- refactor the ``updateArtist`` function to make a PUT request to api. it should be similar to 
+- refactor the ``updateArtist`` function to make a PUT request to api. it should be similar to the config object you used for the POST request only the method should be PUT
 
 - When the id parameter is passed to the form page, a submit should invoke the Update function and when there is no id it should use the add function.
 
